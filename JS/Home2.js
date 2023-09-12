@@ -15,5 +15,5 @@ window.addEventListener('scroll', function() {
     coal.style.top = value * 1.25  + "px";
     mountains_behind.style.top = value * 0.5  + "px";
     mountains_front.style.top = value * 0.5  + "px";
-    text.style.marginRight = value * 3  + "px";
+    text.style.marginRight = value * 2  + "px";
 });
