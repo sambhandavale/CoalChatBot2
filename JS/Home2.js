@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
 window.addEventListener('scroll', function() {
     var value = window.scrollY;
     stars.style.left = value  + "px";
-    coal.style.top = value * 1.25  + "px";
+    coal.style.marginLeft = value * 1.25  + "px";
     mountains_behind.style.top = value * 0.5  + "px";
     mountains_front.style.top = value * 0.5  + "px";
     text.style.marginRight = value * 2  + "px";
