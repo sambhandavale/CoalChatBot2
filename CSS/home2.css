@@ -1,0 +1,135 @@
+*{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior:smooth;
+}
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+    background: linear-gradient(225deg, rgba(15, 76, 97, 0.55)0.1%, #5B5B5B 55.31%, rgba(0, 0, 0, 0.55) 99.69%);
+    background-blend-mode: exclusion;
+}
+header{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    padding: 30px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:6;
+}
+header .logo{
+   color:white;
+   font-weight:700;
+   text-decoration:none;
+   font-size:2em;
+   text-transform:uppercase;
+   letter-spacing:2px;
+}
+header ul{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   gap:30px;
+}
+header ul li{
+   list-style:none;
+   margin:20px;
+}
+header ul li a{
+    text-decoration:none;
+    padding:8px 20px;
+    color:white;
+    border-radius:20px;
+    font-weight:500;
+}
+header ul li a:hover,header ul li a.active{
+    transition:font-size 1s,background-color 0.5s,color 0.5s;
+    font-size:1.2em;
+    background-color: white;
+    color:black;
+}
+section{
+    position:relative;
+    width:100%;
+    height:100vh;
+    padding:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+section img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+section #coal{
+    width:25%;
+    height:60%;
+    position:absolute;
+    top:100px;
+    left:600px;
+    z-index:2;
+}
+#text{
+   z-index:3;
+   color:white;
+   font-size:6em;
+}
+#mountains_front{
+   z-index:5;
+}
+#mountains_behind{
+   z-index:2;
+}
+footer{
+    position:relative;
+    width:100%;
+    height: 100%;
+    display:flex;
+    gap:15px;
+    background-color: #213555;
+    flex-direction: column;
+    align-items: center;
+    z-index:5;
+}
+footer .logo2{
+    width:130px;
+    height:130px;
+    padding:10px;
+}
+footer h3{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display:flex;
+    gap:40px;
+    padding:0px 0px 30px 0px;
+}
+nav img{
+    width:50px;
+}
+nav .line{
+    width:2px;
+    height:50px;
+    background:black;
+    border-radius:50%;
+}
+section::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;
+    background:linear-gradient(to top,#213555,transparent);
+    z-index:8;
+}
