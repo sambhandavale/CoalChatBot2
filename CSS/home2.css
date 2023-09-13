@@ -80,7 +80,7 @@ section #coal{
     z-index:2;
 }
 #text{
-   z-index:3;
+   z-index:6;
    color:white;
    font-size:6em;
 }
